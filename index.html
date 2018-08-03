@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sort</title>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 600px;
+            height: 390px;
+        }
+
+        .wrap {
+            position: relative;
+            white-space: nowrap;
+            width: 600px;
+            height: 390px;
+            margin: 15vh auto 0;
+            background: pink;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style: none
+        }
+
+        .img_wrap {
+            font-size: 0;
+            position: absolute;
+        }
+
+        .img_wrap li {
+            display: inline-block;
+            width: 600px;
+            height: 390px;
+        }
+
+        .dot {
+            position: absolute;
+            bottom: 10px;
+            left: 252px;
+        }
+        .dot:hover{
+            transform: scale(1.4)
+        }
+
+        .dot li {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            margin: 0 2px;
+            float: left;
+        }
+
+        .dot .active {
+            background: orangered;
+            position: absolute;
+        }
+
+        .pre,
+        .next {
+            width: 30px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        .next {
+            position: absolute;
+            right:0;
+            top: 175px; 
+        }
+
+        .pre {
+            position: absolute;
+            left:0;
+            top: 175px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="img_wrap">
+            <li>
+                <img src="./image/1.png" alt="">
+            </li>
+            <li>
+                <img src="./image/2.png" alt="">
+            </li>
+            <li>
+                <img src="./image/3.png" alt="">
+            </li>
+            <li>
+                <img src="./image/4.png" alt="">
+            </li>
+        </ul>
+        <ul class="dot">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="next right">></div>
+        <div class="pre left">
+            < </div>
+        </div>
+
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
