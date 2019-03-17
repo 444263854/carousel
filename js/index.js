@@ -72,6 +72,7 @@ window.onload = function () {
             left: -index * imgWidth
         }, sportTime, () => {
             if (index === len - 1) {
+                //这里不产生动画，立即归0，用户察觉不到
                 imgUlTag.style.left = '0px';
                 index = 0;
             }
